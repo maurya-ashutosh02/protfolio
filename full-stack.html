@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Development</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Ashutosh</a>
+    <nav class="navbar">
+      <a href="index.html" style="--i:1" class="active">Home</a>
+      <a href="index.html#about" style="--i:2">About</a>
+      <a href="index.html#skills" style="--i:3">Skills</a>
+      <a href="index.html#portfolio" style="--i:4">Portfolio</a>
+      <a href="index.html#contact" style="--i:5">Contact</a>
+    </nav>
+    <button type="button" id="theme-toggle" class="btn btn-light" onclick="toggleTheme()">Light</button>
+    <i class="bx bx-menu menu-toggle"></i>
+  </header>
+
+  <section class="home" style="height:auto; padding-top:150px;">
+    <div class="container">
+      <h1 style="text-align: center;">Frontend Development</h1>
+      <p style="margin-top: 30px; font-size: 18px;">
+        I design and develop modern frontend interfaces using React.js and clean CSS frameworks like Tailwind and Bootstrap.
+        My goal is to deliver fast, intuitive, and interactive user experiences that are optimized for all devices.
+      </p>
+      <ul style="margin-top: 20px; font-size: 17px;">
+        <li>⚛️ Component-based React architecture</li>
+        
+        <li>📱 Mobile-first responsive layouts</li>
+        <li>🔁 Dynamic UI with React Hooks & Context</li>
+        <li>🧠 Form handling & validation</li>
+        <li>⚡ Optimized performance and lazy loading</li>
+      </ul>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="index.html#projects" class="btn-box">View Projects</a>
+        <a href="index.html#contact" class="btn-box">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ashutosh Maurya — Crafted with ❤️</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+      const toggleBtn = document.getElementById('theme-toggle');
+      const isLightMode = document.body.classList.contains('light-mode');
+      toggleBtn.textContent = isLightMode ? 'Dark' : 'Light';
+    }
+
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.navbar').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

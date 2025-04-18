@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Development</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Ashutosh</a>
+    <nav class="navbar">
+      <a href="index.html" style="--i:1" class="active">Home</a>
+      <a href="index.html#about" style="--i:2">About</a>
+      <a href="index.html#skills" style="--i:3">Skills</a>
+      <a href="index.html#portfolio" style="--i:4">Portfolio</a>
+      <a href="index.html#contact" style="--i:5">Contact</a>
+    </nav>
+    <button type="button" id="theme-toggle" class="btn btn-light" onclick="toggleTheme()">Light</button>
+    <i class="bx bx-menu menu-toggle"></i>
+  </header>
+
+  <section class="home" style="height:auto; padding-top:150px;">
+    <div class="container">
+      <h1 style="text-align: center;">Web Development</h1>
+      <p style="margin-top: 30px; font-size: 18px;">
+        I offer full-stack web development services using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+        Whether it’s a startup MVP, enterprise portal, or custom tool – I can take your idea from concept to launch.
+      </p>
+      <ul style="margin-top: 20px; font-size: 17px;">
+        <li>🌐 Responsive Web Design</li>
+        <li>🔧 Backend APIs with Express and Node.js</li>
+        <li>📦 Database integration using MongoDB</li>
+        <li>🔑 User authentication with JWT or Firebase</li>
+        <li>🛠 Deployment on Vercel, Render, or Netlify</li>
+        <li>🔄 Real-time features using WebSockets</li>
+      </ul>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="index.html#projects" class="btn-box">View Projects</a>
+        <a href="index.html#contact" class="btn-box">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Ashutosh Kumar — Crafted with ❤️</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+      const toggleBtn = document.getElementById('theme-toggle');
+      const isLightMode = document.body.classList.contains('light-mode');
+      toggleBtn.textContent = isLightMode ? 'Dark' : 'Light';
+    }
+
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.navbar').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

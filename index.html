@@ -1,0 +1,339 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Ashutosh</a>
+
+
+
+    <!-- Navigation links -->
+    <nav class="navbar">
+      <a href="#" style="--i:1" class="active">Home</a>
+      <a href="#about" style="--i:2">About</a>
+      <a href="#skills" style="--i:3">Skills</a>
+      <a href="#portfolio" style="--i:4">Portfolio</a>
+      <a href="#contact" style="--i:5">Contact</a>
+    </nav>
+
+    <!-- Theme toggle -->
+    <button type="button" id="theme-toggle" class="btn btn-light" onclick="toggleTheme()">Light</button>
+
+
+    <!-- Hamburger icon -->
+    <i class="bx bx-menu menu-toggle"></i>
+  </header>
+
+
+
+  <section class="home">
+    <div class="home-content">
+      <h3>Hello, It's me</h3>
+      <h1>Ashutosh</h1>
+      <h3>And I'm a <span class="text"></span></h3>
+      <p>A web designer with extensive experience in creating and designing websites.</p>
+      <div class="home-sci">
+        <a href="https://m.facebook.com/maurya.ashutosh.2025/" style="--i:7"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/_im_ashutosh_maurya?igsh=OXpod2xzc2oyYXl0" style="--i:8"><i
+            class='bx bxl-instagram'></i></a>
+        <a href="https://wa.me/qr/ZEQQUM2GOH4XI1" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
+        <a href="https://www.linkedin.com/in/ashutosh-maurya-6b5353253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          style="--i:10"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/maurya-ashutosh02" style="--i:11"><i class='bx bxl-github'></i></a>
+
+      </div>
+      <a href="#about" class="btn-box">More about me</a>
+    </div>
+
+    <div class="about-profile-img">
+      <img src="/images/Screenshot 2025-04-18 015858.png" alt="profile">
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="/images/1699817181044.jpg" alt="About Me Image">
+    </div>
+    <div class="about-text">
+      <h2>About <span>Me</span></h2>
+      <h4>Full Stack Developer</h4>
+      <p>
+        Hi, I'm Ashutosh – a passionate full stack developer with hands-on experience in building responsive, scalable
+        web applications. From designing elegant UIs to engineering robust backend APIs, I enjoy transforming ideas into
+        real-world digital solutions. I specialize in the MERN stack and love exploring new tech trends, tools, and
+        frameworks.
+      </p>
+      <a href="#skills" class="btn-box">More About Me</a>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="container">
+      <div class="sub-title">My <span>Services</span></div>
+      <div class="service-list">
+        
+        <!-- Web Development -->
+        <div>
+          <i class='bx bx-code' style='color:#29b5d1'></i>
+          <h2>Web Development</h2>
+          <p>
+            Custom, responsive, and high-performance websites using modern technologies like React, Node.js, MongoDB, and Express.
+            Whether it's an e-commerce platform, portfolio, or business site – I bring functionality to life.
+          </p>
+          <a href="webdev.html" class="read">Learn more</a>
+        </div>
+  
+        <!-- React Frontend Development -->
+        <div>
+          <i class='bx bxl-react' style='color:#61DBFB'></i>
+          <h2>React Frontend</h2>
+          <p>
+            I build component-based, high-performance UIs using React.js. From state management with Redux to seamless API integration,
+            I ensure a clean, scalable, and modern frontend that delights users.
+          </p>
+          <a href="react-frontend.html" class="read">Learn more</a>
+        </div>
+  
+        <!-- Full Stack Development -->
+        <div>
+          <i class='bx bx-layer' style='color:#00ADB5'></i>
+          <h2>Full Stack Development</h2>
+          <p>
+            End-to-end application development using the MERN stack (MongoDB, Express, React, Node.js). I handle everything from 
+            frontend design to backend logic and database operations, ensuring a smooth and efficient web experience.
+          </p>
+          <a href="full-stack.html" class="read">Learn more</a>
+        </div>
+  
+        <!-- Authentication & Authorization -->
+        <div>
+          <i class='bx bx-shield-quarter' style='color:#F39C12'></i>
+          <h2>Authentication & Authorization</h2>
+          <p>
+            I implement secure user login systems with JWT, Firebase Auth, and OAuth. Role-based access control, encrypted sessions,
+            and protected routes are part of my standard practices to keep user data safe.
+          </p>
+          <a href="author.html" class="read">Learn more</a>
+        </div>
+  
+       
+  
+      </div>
+    </div>
+  </section>
+  
+  <h1 class="sub-title">My <span>Skills</span></h1>
+
+  <section id="skills">
+    <div class="container1" id="Skill">
+      <h1 class="heading1">Technical Skills</h1>
+      <div class="technical-bars">
+        <div class="bar"><i class='bx bxl-html5' style='color:#28DED3'></i>
+          <div class="info">
+            <span>HTML</span>
+          </div>
+          <div class="progress-line html">
+            <span> </span>
+          </div>
+        </div>
+        <div class="bar"><i class='bx bxl-css3' style='color:#147bbc'></i>
+          <div class="info">
+            <span>CSS</span>
+          </div>
+          <div class="progress-line css">
+            <span> </span>
+          </div>
+        </div>
+        <div class="bar"><i class='bx bxl-javascript' style='color:#b0bc1e'></i>
+          <div class="info">
+            <span>JavaScript</span>
+          </div>
+          <div class="progress-line js">
+            <span> </span>
+          </div>
+        </div>
+        <div class="bar"><i class='bx bxl-java' style='color:#28DED3'></i>
+          <div class="info">
+            <span>Java</span>
+          </div>
+          <div class="progress-line java">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar"><i class='bx bxl-python' style='color:#c32ec9'></i>
+          <div class="info">
+            <span>python</span>
+          </div>
+          <div class="progress-line python">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <h1 class="heading1">Professional Skills</h1>
+      <div class="radial-bars">
+        <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox=" 0 0 200 200  ">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">90%</div>
+          <div class="text">creativity</div>
+
+        </div>
+        <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">85%</div>
+          <div class="text">communication</div>
+
+        </div>
+        <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">75%</div>
+          <div class="text">Problem Solving</div>
+
+        </div>
+        <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">60%</div>
+          <div class="text">Team Work</div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section>
+  <section id="projects" class="portfolio-section">
+    <div class="container">
+      <h2 class="section-title">Latest <span>Projects</span></h2>
+
+      <div class="portfolio-grid">
+        <!-- Project Card -->
+        <div class="project-card">
+          <img src="/images/Screenshot 2025-04-18 134709.png" alt="Project Image">
+          <div class="overlay">
+            <h3>Destiny-finder</h3>
+            <!-- <p style="color:black">A clean mobile-first UI design concept built using Figma, focused on accessibility and minimalism.</p> -->
+            <a href="project1.html" ><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="/images/Screenshot 2025-04-18 144439.png" alt="Project Image">
+          <div class="overlay">
+            <h3>Weather App</h3>
+            <!-- <p>A fully functional iOS application built using SwiftUI and integrated with Firebase.</p> -->
+            <a href="project2.html"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="/images/ChatGPT Image Apr 18, 2025, 02_59_34 PM.png" alt="Project Image">
+          <div class="overlay">
+            <h3>Simon Say</h3>
+            <a href="project3.html" ><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        For More Projects Visit GitHub:<a href="https://github.com/maurya-ashutosh02">@Ashutosh_Maurya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">
+        Let’s <span>Connect</span>
+      </h2>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <p>I’m open to freelance projects, collaborations, or just a friendly tech chat. Drop a message and I’ll get
+            back to you soon.</p>
+
+          <div class="info-block">
+            <i class='bx bxs-user'></i>
+            <div>
+              <h4>Name</h4>
+              <p>Ashutosh Maurya</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <i class='bx bxs-map'></i>
+            <div>
+              <h4>Location</h4>
+              <p>Lucknow, India</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <i class='bx bxs-envelope'></i>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:ashutoshmaurya9696@gmail.com">ashutoshmaurya9696@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="d77c99cb-347d-43dd-b811-e60be27a34a3">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="send-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ashutosh Maurya — Crafted with ❤️</p>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+```
